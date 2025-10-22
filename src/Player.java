@@ -17,7 +17,12 @@ public class Player {
     }
 
     public Boolean near(Ball ball){
-        int distance = ball.d
+        int distance = (int) Math.sqrt(Math.pow(x-ball.getX(), 2) + Math.pow(y-ball.getY(), 2));
+        if (distance < 8){
+            return true;
+        } else {
+            return false;
+        }
     }
 
     public void kick(Ball ball){
