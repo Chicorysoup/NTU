@@ -30,6 +30,6 @@ public class ShapeCircle extends Shape{
     }
 
     public String toString(){
-        return "Shape[color=" + color + ", filled=" + filled + "], radius=" + radius + "]";
+        return "Circle[Shape[color=" + color + ", filled=" + filled + "], radius=" + radius + "]";
     }
 }
